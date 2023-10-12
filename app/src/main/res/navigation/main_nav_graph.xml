@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/photosFragment">
+
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="com.chb.flickrphotosoftheday.presentation.fragments.PhotosFragment"
+        android:label="fragment_photos"
+        tools:layout="@layout/fragment_photos">
+
+        <action
+            android:id="@+id/action_photosFragment_to_photoInfoPagerFragment"
+            app:destination="@id/photoInfoPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoInfoPagerFragment"
+        android:name="com.chb.flickrphotosoftheday.presentation.fragments.PhotoInfoPagerFragment"
+        android:label="PhotoInfoPagerFragment"
+        tools:layout="@layout/fragment_photo_info_pager" />
+</navigation>

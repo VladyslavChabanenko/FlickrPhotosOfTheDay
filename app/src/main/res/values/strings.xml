@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FlickrPhotosOfTheDay</string>
+    <string name="flickr">Flickr</string>
+    <string name="photos_of_the_day">Photos of the day</string>
+</resources>
